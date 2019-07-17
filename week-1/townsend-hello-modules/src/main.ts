@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  townsend-assignment-1.4
+; Author: Ethan Townsend
+; Date:   7/10/2019
+; Description: web-425
+;===========================================
+*/
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

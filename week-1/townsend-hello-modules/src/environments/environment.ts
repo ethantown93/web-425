@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  townsend-assignment-1.4
+; Author: Ethan Townsend
+; Date:   7/10/2019
+; Description: web-425
+;===========================================
+*/
+
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.

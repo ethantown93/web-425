@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  townsend-assignment-1.4
+; Author: Ethan Townsend
+; Date:   7/10/2019
+; Description: web-425
+;===========================================
+*/
+
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ShippingComponent } from './shipping.component';
