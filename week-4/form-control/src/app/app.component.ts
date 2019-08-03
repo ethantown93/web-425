@@ -50,6 +50,10 @@ import {FormControl} from "@angular/forms";
   styles: [`
     .txt-bold {
       font-weight: bold;
+      background-color: dodgerblue;
+      padding: 10px;
+      text-align: center;
+  
     }
     
   `]
