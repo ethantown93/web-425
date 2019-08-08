@@ -1,0 +1,22 @@
+/*
+============================================
+; Title:  townsend-assignment-2.2
+; Author: Ethan Townsend
+; Date:   8/7/2019
+; Description: web-425
+;===========================================
+*/
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+}
+
+.wrapper {
+    padding: 70px 70px 0;
+    display: block;
+}

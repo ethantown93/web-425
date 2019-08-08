@@ -1,0 +1,27 @@
+/*
+============================================
+; Title:  townsend-assignment-2.2
+; Author: Ethan Townsend
+; Date:   8/7/2019
+; Description: web-425
+;===========================================
+*/
+
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+.parent {
+    height: 100%;
+    width: 100%
+}
+
+.left {
+    background-color: dodgerblue;
+    width: 10%;
+}
+
+.right {
+    background-color: whitesmoke;
+    width: 90%;
+}
