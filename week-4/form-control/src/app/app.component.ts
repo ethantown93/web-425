@@ -53,7 +53,6 @@ import {FormControl} from "@angular/forms";
       background-color: dodgerblue;
       padding: 10px;
       text-align: center;
-  
     }
     
   `]
