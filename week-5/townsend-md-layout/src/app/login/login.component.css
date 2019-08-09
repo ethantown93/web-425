@@ -53,14 +53,6 @@
     background-color: dodgerblue;
 }
 
-.right {
-    max-width: 90%;
-}
-
-.left {
-    max-width: 10%;
-}
-
 .parent {
     height: 90vh;
 }

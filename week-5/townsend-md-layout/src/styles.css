@@ -18,10 +18,10 @@
 
 .left {
     background-color: dodgerblue;
-    width: 10%;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .right {
     background-color: whitesmoke;
-    width: 90%;
 }

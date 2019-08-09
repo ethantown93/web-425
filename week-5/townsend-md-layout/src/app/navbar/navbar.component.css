@@ -10,3 +10,7 @@
 button:hover {
     background-color: dodgerblue;
 }
+
+mat-toolbar {
+    border-radius: 5px;
+}

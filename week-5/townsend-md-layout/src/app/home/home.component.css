@@ -10,3 +10,8 @@
 .parent {
     height: 90vh;
 }
+
+h1 {
+    text-align: center;
+    margin: 10px;
+}
