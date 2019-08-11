@@ -10,7 +10,7 @@
 <mat-toolbar class='menu' role='header' color='primary'>
   <mat-toolbar-row>
     <button mat-button class='toolbar__icon-button mat-button'>
-
+      <mat-icon>web</mat-icon>
       <span [routerLink]="['/']" style='margin-left: 5px !important;'>Home</span>
     </button>
     <button [routerLink]="['/login']" mat-button class='mat-button'>
@@ -23,16 +23,19 @@
     <div fxFlex></div>
 
     <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
-      Account
+      <mat-icon>account_circle</mat-icon>
     </button>
     <mat-menu #menu='matMenu'>
       <button mat-menu-item>
+        <mat-icon>perm_contact_calendar</mat-icon>
         <span>My Profile</span>
       </button>
       <button mat-menu-item>
+        <mat_icon>settings</mat_icon>
         <span>Settings</span>
       </button>
       <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
         <span>Logout</span>
       </button>
     </mat-menu>
