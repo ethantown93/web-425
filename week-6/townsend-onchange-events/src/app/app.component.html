@@ -1,0 +1,80 @@
+<!-- /*
+============================================
+; Author: Ethan Townsend
+; Date:   8/12/2019
+; Description: web-425
+;===========================================
+*/ -->
+
+<mat-toolbar class='menu' role='header' color='primary'>
+  <mat-toolbar-row>
+    <button mat-button class='toolbar__icon-button mat-button'>
+      <mat-icon>web</mat-icon>
+      <span style='margin-left: 5px !important;'>Home</span>
+    </button>
+    <button mat-button class='mat-button'>
+      Login
+    </button>
+    <button mat-button class='mat-button'>
+      Contact
+    </button>
+
+    <div fxFlex></div>
+
+    <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu='matMenu'>
+      <button mat-menu-item>
+        <mat-icon>perm_contact_calendar</mat-icon>
+        <span>My Profile</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class='parent' fxLayout='row'>
+  <div class='left' fxFlex=10>
+    <button mat-button class='mat-button-sidebar'>
+      Blog
+    </button>
+    <button mat-button class='mat-button-sidebar'>
+      About
+    </button>
+  </div>
+  <div class='right' fxFlex>
+
+    <div class='wrapper'>
+      <div class='frm-login'>
+        <mat-card class='greeting-box'>
+          <mat-card-header class='greeting-header'>
+            <mat-toolbar>
+              Greetings!
+            </mat-toolbar>
+          </mat-card-header>
+          <mat-card-content class='frm-login-body'>
+            <mat-form-field>
+              Greeting: <input type='text' matInput [(ngModel)]='myGreeting'>
+            </mat-form-field>
+            <mat-form-field>
+              User name: <input type='text' matInput [(ngModel)]='myUser.name'>
+            </mat-form-field>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div>
+      <mat-card class='child'><app-child [greeting]='myGreeting' [user]='myUser'></app-child>
+      </mat-card>
+    </div>
+  </div>
+</div>

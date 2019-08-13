@@ -1,8 +1,7 @@
 /*
 ============================================
-; Title:  townsend-assignment-2.2
 ; Author: Ethan Townsend
-; Date:   8/7/2019
+; Date:   8/12/2019
 ; Description: web-425
 ;===========================================
 */
@@ -10,17 +9,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MatCardModule, MatButtonModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatMenuModule, MatIconModule } from '@angular/material';
+import { ChildComponent } from './child/child.component';
+import { FormsModule } from '@angular/forms';
+
+import { MatCardModule, MatButtonModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatMenuModule, MatIconModule, MatFormField } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from "@angular/flex-layout";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
@@ -30,6 +36,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     FlexLayoutModule,
     MatMenuModule,
     MatIconModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

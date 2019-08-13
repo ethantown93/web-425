@@ -1,0 +1,43 @@
+/*
+============================================
+; Author: Ethan Townsend
+; Date:   8/12/2019
+; Description: web-425
+;===========================================
+*/
+
+/* .parent {
+   
+} */
+
+mat-toolbar {
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.left {
+    margin-right: 20px;
+    background-color: blue;
+    border-radius: 3px;
+}
+
+input {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.mat-button-sidebar {
+    color: white;
+}
+
+.mat-button-sidebar:hover {
+    opacity: .9;
+}
+
+.child {
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+
