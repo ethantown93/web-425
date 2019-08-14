@@ -1,0 +1,28 @@
+<!-- /*
+============================================
+; Author: Ethan Townsend
+; Date:   8/12/2019
+; Description: web-425
+;===========================================
+*/ -->
+
+<div class='form-validation'>
+    <mat-card>
+        <form class='form-field' #f='ngForm' (ngSubmit)='onSubmit(f.value)'>
+            <div>Phone number:
+                <mat-form-field>
+                    <input matInput type="text" name="telephone" placeholder="Telephone" ngModel required
+                        pattern="[0-9]*" minlength="10" #phone="ngModel"
+                        [class.hasError]="phone.isvalid && phone.touched">
+                </mat-form-field>
+                <div [hidden]="phone.valid || phone.pristine">
+                    <div class="error" [hidden]="!phone.hasError('minlength')">Phone has to have at least 10 digits
+                    </div>
+                    <div class="error" [hidden]="!phone.hasError('required')">Phone is required</div>
+                    <div class="error" [hidden]="!phone.hasError('pattern')">Only digits are allowed</div>
+                </div>
+            </div>
+            <button mat-raised-button color='primary' type='submit' [disabled]='f.invalid'>Submit</button>
+        </form>
+    </mat-card>
+</div>
